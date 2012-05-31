@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Earth Builder Layer Demo</title>
+
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.7&sensor=true&libraries=visualization"></script>
+
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/map.js"></script>
+
+  </head>
+
+  <body onload="initialize()"> 
+  
+    <div id="map_canvas"></div>
+    
+    <form name="myform">
+        <div id="content">
+            <div id="box_title" align="center">Earth Builder Layers</div>
+                <div id="row">
+                    <div id="check_box"><input type="checkbox" name="Image" onclick="toggleImage()"></div>
+                    <div id="line_item">Westchester 2009 Imagery</div>
+                </div>
+        </div>
+    </form>
+
+  </body> 
+
+</html>
