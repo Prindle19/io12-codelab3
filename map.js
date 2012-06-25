@@ -12,12 +12,14 @@ function initialize() {
     
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-
+/////////////////////////////////////////////////////////////////
+// PASTE Your ClientID and Redirect URI for STEP 1 BELOW  //////
+///////////////////////////////////////////////////////////////
   var hash_value = window.location.hash;
   if (!hash_value) {
      var redirect_url = "https://accounts.google.com/o/oauth2/auth";
-     redirect_url += "?client_id=?";
-     redirect_url += "&redirect_uri=?";
+     redirect_url += "?client_id=";
+     redirect_url += "&redirect_uri=";
      redirect_url += "&scope=https://www.googleapis.com/auth/earthbuilder.readonly";
      redirect_url += "&response_type=token";
 	 window.location = redirect_url;
