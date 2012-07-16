@@ -8,7 +8,7 @@ var fs = require('fs');
 var path = require('path');
  
 http.createServer(function (request, response) {
-
+     
     var filePath = '.' + request.url;
     if (filePath == './')
         filePath = './index.html';
@@ -44,7 +44,6 @@ http.createServer(function (request, response) {
         }
     });
      
-}).listen(process.env.PORT || 8080, "0.0.0.0");
+}).listen(process.env.PORT);
  
 console.log('Server is running');
-
